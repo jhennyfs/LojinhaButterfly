@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Butterfly Store<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="carrinhoicon.jpg" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor total: R$0,00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar1.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar Butterfly </h3>
+                            <p>R$ 100,00</p>
+                            <button onclick="addCarrinho ('Colar Butterfly', 100.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar2.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar Três Corações</h3>
+                            <p>R$ 130,00</p>
+                            <button onclick="addCarrinho ('Colar Três Corações', 130.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar3.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar Butterfly Duplo</h3>
+                            <p>R$ 120,00</p>
+                            <button onclick="addCarrinho ('Colar Butterfly Duplo', 120.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar4.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar On The Beach</h3>
+                            <p>R$ 160,00</p>
+                            <button onclick="addCarrinho ('Colar On The Beach', 160.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar5.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar Heart</h3>
+                            <p>R$ 115,00</p>
+                            <button onclick="addCarrinho ('Colar Heart', 115.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="colar6.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Colar Black Butterfly</h3>
+                            <p>R$ 100,00</p>
+                            <button onclick="addCarrinho ('Colar Black Butterfly', 100.00)">Adicionar ao Carrinho
+                            </button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
